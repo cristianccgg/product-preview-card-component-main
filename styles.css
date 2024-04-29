@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Fraunces", serif; */
+}
+
+:root {
+  /* ### Primary */
+
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  /* ### Neutral */
+
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+main {
+  background-color: var(--Cream);
+  height: 100vh;
+  padding: 30px 20px;
+}
+
+.main-container {
+  border-radius: 20px;
+  background-color: var(--White);
+}
+
+.img-small {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.img-desktop {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.product {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  font-size: 3vw;
+  letter-spacing: 2.5px;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 9vw;
+  line-height: 1;
+}
+
+.description {
+  font-size: 4vw;
+  font-weight: 600;
+  color: var(--Dark-grayish-blue);
+  line-height: 1.5;
+}
+
+.prices-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.current-price {
+  color: var(--Dark-cyan);
+  font-weight: 800;
+  font-size: 9vw;
+  font-family: "Fraunces", serif;
+}
+
+.old-price {
+  font-size: 3vw;
+  font-weight: 600;
+  color: var(--Dark-grayish-blue);
+  line-height: 1.5;
+  text-decoration: line-through;
+}
+
+.btn {
+  font-size: 2vw !important;
+  align-content: center;
+  color: white !important;
+  font-weight: 600 !important;
+  background: var(--Dark-cyan) !important;
+  padding: 20px !important;
+}
+
+.button-icon {
+  margin-right: 10px;
+  width: 1.6vw;
+}
+
+button:hover {
+  background-color: hsl(158, 33%, 21%) !important;
+}
+
+@media screen and (min-width: 576px) {
+  main {
+    background-color: var(--Cream);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-container {
+    transform: scale(0.5);
+    border-radius: 20px;
+    background-color: var(--White);
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+    padding: 40px 40px;
+  }
+
+  .product {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    font-size: 1.8vw;
+    letter-spacing: 2.5px;
+  }
+
+  .title {
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 6vw;
+    line-height: 1;
+  }
+
+  .description {
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: var(--Dark-grayish-blue);
+    line-height: 2;
+  }
+  .current-price {
+    color: var(--Dark-cyan);
+    font-weight: 800;
+    font-size: 5vw;
+    font-family: "Fraunces", serif;
+  }
+
+  .old-price {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;
+    text-decoration: line-through;
+  }
+}
