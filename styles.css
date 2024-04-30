@@ -98,7 +98,7 @@ main {
 }
 
 .btn {
-  font-size: 2vw !important;
+  font-size: 3vw !important;
   align-content: center;
   color: white !important;
   font-weight: 600 !important;
@@ -108,7 +108,7 @@ main {
 
 .button-icon {
   margin-right: 10px;
-  width: 1.6vw;
+  width: 3vw;
 }
 
 button:hover {
@@ -171,5 +171,18 @@ button:hover {
     color: var(--Dark-grayish-blue);
     line-height: 1.5;
     text-decoration: line-through;
+  }
+
+  .btn {
+    font-size: 2vw !important;
+    align-content: center;
+    color: white !important;
+    font-weight: 600 !important;
+    background: var(--Dark-cyan) !important;
+    padding: 20px !important;
+  }
+  .button-icon {
+    margin-right: 10px;
+    width: 1.6vw;
   }
 }
